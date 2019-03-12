@@ -11,7 +11,7 @@ spec:
     spec:
       containers:
       - name: angular-demo
-        image: kunalborkar/angular-app:v1
+        image: kunalborkar/my-angular-app:v1
         ports:
         - name: nginx-port
           containerPort: 80
