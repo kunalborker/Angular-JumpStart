@@ -1,0 +1,17 @@
+apiVersion: extensions/v1beta1
+kind: Deployment
+metadata:
+  name: angular-deployment
+spec:
+  replicas: 3
+  template:
+    metadata:
+      labels:
+        app: my-angular
+    spec:
+      containers:
+      - name: angular-demo
+        image: kunalborkar/angular-app:v1
+        ports:
+        - name: nginx-port
+          containerPort: 80
